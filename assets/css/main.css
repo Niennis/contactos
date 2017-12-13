@@ -1,0 +1,13 @@
+header{
+  border: 1px solid salmon;
+  background-color: salmon;
+  color: white;
+}
+
+.fa-plus, .fa-search{
+  border: 1px solid teal;
+  background-color: teal;
+  padding: 0.2em 1.5em;
+  margin: 10% 0;
+  color: white;
+}

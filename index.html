@@ -1,0 +1,92 @@
+<html>    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <title>Lista de contactos</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+          <h4>Lista de contactos</h4>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <i class="fa fa-plus" data-toggle="modal" data-target="#add"></i>
+        </div>
+        <!--MODAL-->
+          <div class="modal fade" id="add" role="dialog">
+            <div class="modal-dialog">            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Contactos</h4>
+                </div>
+                <div class="modal-body">                  
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-user-circle"></i>
+                        </span>
+                        <input type="text" class="form-control" id="name" aria-label="..." placeholder="Nombre">
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-user-circle"></i>                              
+                        </span>
+                        <input type="text" class="form-control" id="lastName" aria-label="..." placeholder="Apellido">
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->                  
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-phone"></i>
+                        </span>
+                        <input type="text" class="form-control" id="phone" aria-label="..." placeholder="Teléfono">
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <i class="fa fa-envelope"></i>                              
+                        </span>
+                        <input type="text" class="form-control" id="mail" aria-label="..." placeholder="Mail">
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal" id="addContact">Agregar</button>
+                </div>
+              </div>              
+            </div>
+          </div>    
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="contacts">
+
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script> 
+    <script src="assets/js/bootstrap.min.js"></script>     
+    <script src="assets/js/app.js"></script>
+  </body>  
+</html>
